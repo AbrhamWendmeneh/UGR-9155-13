@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap"
+     rel="stylesheet"--> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+       name="description"
+       content="Blood donation center website in which one can easly select appointment"
+     />
+     <meta name="author" content="Abrham Wendmeneh" />
+     <meta name="theme-color" content="#fff" />
+     <meta
+     name="keywords"
+     content="Home, Donate blood, Contact, About, Learn more, My account"/>
+    <title>Donate_blood</title>  
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-img">
+            
+        </div>
+        
+        <div class="brand-title" >BD<span class="underline">C</span></div>
+        <div class="toggle_btn_down">
+            <button onclick="myFunction()" class="toggle_btn"  aria-expanded="false"
+            aria-label="Sort">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+            <div id="myDropdown" class="togglebtn-content">
+              
+              <a href="Home_page.html">Home_page</a>
+              <a href="Donate_blood.html">Donate blood</a>
+              <a href="About.html">About</a>
+              <a href="Contact.html">Contact</a>
+              <a href="My_Account.html">My Account</a>
+              <a href="Learn_more.html">Learn more</a>
+            </div>
+          </div>
+        <div class="navbar-link">
+            <ul>
+                <li>             
+                    <a href="Home_page.html">Home</a>
+                    <a href="#">Donate blood</a>
+                    <a href="About.html">About</a>
+                    <a href="Contact.html">Contact</a>
+                    <a href="My_Account.html">My account</a>                
+                    <a href="Learn_more.html">Learn more</a>
+                    
+                        
+                </li>
+            </ul>
+        </div>
+        
+
+    </nav>
+    <div class="content">
+          
+            <div class="item1">
+            
+                <form>
+                    <div>
+                        <div><label for="namei1">Name*</label><input type="text" name="name" required id="namei1"></div><br>
+                        <div><label for="namei2">Email*</label><input type="email" name="name" required id="namei2"></div><br>
+                        <div><label for="namei3">Phone*</label><input type="text" name="name" required id="namei3"></div><br>
+                        <div><label for="namei4">City*</label><input type="text" name="name" required id="namei4"> </div><br>
+                    </div>    
+                    <div>
+                        <label for="ctry">Country*</label>  
+                            <select id="ctry">
+                                <option value="Please select">Please select</option>
+                                <option value="Djibouty">Djibouty</option>
+                                <option value="Ertirea">Ertirea</option>
+                                <option value="Ethiopia">Ethiopia</option>
+                                <option value="Kenya">Kenya</option>
+                                <option value="Somalia">somalia</option>
+                                <option value="South sudan">south sudan</option>
+                                <option value="Sudan">Sudan</option>
+                            </select>
+                    </div><br>
+                    <div>
+                        <label for="bl1">Blood type*</label>  
+                            <select id="bl1">
+                                <option value="Please select"  >Please select</option>
+                                <option value="A+" ">A+</option>
+                                <option value="A-" >A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-" >B-</option>
+                                <option value="AB" >AB</option>
+                                <option value="O+" >O+</option>
+                                <option value="O-" >O-</option>
+                                
+                            </select>
+                    </div><br>
+                
+                    <div><label for="numi1" >Age*</label><input type="number" id="numi1" name="num" min="18" max="65"><br>
+                    <div> <label for="numi2">Weight*</label><input type="number" id="numi2" name="num" min="45"></div>
+                    </div><br>
+                
+                    <div>
+                        <p>Is there any history of surgery or blood transfusion in the past six months?</p>
+                        <label for="resi">click<input type="radio" name="res" id="resi" value="YES">YES<br></label>
+                        <label for="noi">click</label> <input type="radio" name="res" id="noi" value="NO">NO<br>
+                    </div>
+                
+                    <div>
+                        <p>Are you taking or have you taken any type of antibiotics in the past 72 hours?</p>
+                        <label for="radioi">click<input type="radio" name="res" id="radioi" value="YES">YES<br></label>
+                        <label for="noii1">click <input type="radio" name="res" value="NO" id="noii1">NO<br></label>
+                    </div>
+                
+                    <div><p>Do you suffer from or have suffered from any of the following diseases?</p> 
+                        <select id="optioni">
+                            <option value="Please select if you " >Please select if you</option>
+                            <option value="Heart disease">Heart disease</option>
+                            <option value="HIV AIDS">HIV AIDS</option>
+                            <option value="Diabets">Diabets</option>
+                            <option value="Cancer/Malignant Disease">Cancer/Malignant Disease</option>
+                            <option value="Sexually Transmitted Diseases">Sexually Transmitted Diseases</option>
+                            <option value="Allergic Disease">Allergic</option>
+                            <option value="Kidney Disease">Kidney Disease</option>
+                            <option value="Tuberclosis">Tuberclosis</option>
+                            <option value="Hepatitis B/C">Hepatitis B/C</option>
+                            
+                        </select><br>
+                        <label for="yesi"><input type="radio" name="res" id="yesi" value="YES">YES<br></label>
+                        <label for="noi1"><input type="radio" name="res" id="noi1" value="NO">NO<br></label>
+                    </div>
+                
+                    <div>
+                        <label for="submiti">ty <input type="submit" value="submit" id="submiti"></label>
+                    </div><br>
+                
+                
+                
+                
+                
+                
+                    <div><lable for="namei22">icon</lable><input type="date" id="namei22" name="name">
+                        <label for="submiti2"><input type="submit" value="submit" id="submiti2">submit<br><br><br></label>
+                    </div>
+                </form>
+                </div>            
+            </div>
+            <div class="item2">
+                <img src="image/AdobeStock_292432300_Preview - Copy.jpeg" alt="person donating blood" height="50%" width="50%">
+            </div>
+            
+           
+         
+    </div>
+
+    
+    <footer>
+        <div class="footer">
+            <div class="main-footer">
+                <div class="footer-container">
+                    <div class="row">
+                        <section id="contact" class="columnsmall-4">
+                            <span>Contact us :</span>
+                            <ul class="list-items">
+                                <li><a href="#">Office: (+251) 0181234567</a></li>
+                                <li><a href="#">Cell-Ph: (+251) 0334428796</a></li>
+                                <li><a href="#">blood_donation@gmail.com</a></li>
+                                
+                            </ul>
+                            
+                            
+                            
+                            
+
+
+                            
+
+                            <hr class="straight-line">
+                
+                        </section>
+                        <section id="address" class="columnsmall-4">
+                            <span>Address</span>
+                            <br>
+                            Queen Elithabet II  Road<br>
+                            Addis Ababa
+                            <div class="icons">
+                                
+                                <a href="#"> <span><img src="image/facebook.png" alt="facaebook" height="24px" width="24px"></span></a>
+                                <a href="#"> <span><img src="image/telegram.png" alt="telegram" height="24px" width="24px"></span></a>
+                                <a href="#"> <span><img src="image/linkedin.png" alt="likedin" height="24px" width="24px"></span></a>
+                                <a href="#"> <span><img src="image/twitter.png" alt="twitter" height="24px" width="24px"></span></a>
+                            </div>
+                            <hr class="straight-line">
+                        </section>
+                        <div id="testimonials" class="columnsmall-4">
+                            <p> "Blood is the gift that is given to save life"</p>
+                        </div>
+                    </div>
+                        <div class="underline"></div>
+                        <div class="copyright">&copy;Copyright Blood Donation Center.org</div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
