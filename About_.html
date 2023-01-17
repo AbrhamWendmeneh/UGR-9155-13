@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap"
+     rel="stylesheet"--> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+   <meta
+      name="description"
+      content="Blood donation center website in which one can easly select appointment"
+    />
+    <meta name="author" content="Abrham Wendmeneh" />
+    <meta name="theme-color" content="#fff" />
+    <meta
+    name="keywords"
+    content="Home, Donate blood, Contact, About, Learn more, My account"/>
+
+
+
+    <title>About</title>
+    <style>
+      html{
+        width: fit-content;
+      }
+      body{
+        background-color: rgb(243, 239, 239)/*linear-gradient(#10100f,rgb(123, 120, 120),rgb(128, 129, 128))*/;
+        margin: 0;
+        padding: 0;
+    
+    }
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    header{
+      background-color: #333;
+  }
+   .navbar{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        background-color: #333;
+        color: white;
+        margin: 0px;
+        padding: 0 24px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        width: 100%;
+    }
+    .navbar-space{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /*background-color: #333;*/
+        color: white;
+    }
+
+    
+    .brand-title{
+        margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+        font-size: 2rem;
+        font-family: 'Orbitron';
+        text-shadow: -5px 5px 4px black;
+    
+    }
+    .underline{ /*inorder to underline the title of the last word*/
+        border-bottom: 3px solid white;
+    }
+   /* li{
+      list-style: none;
+  }
+  a{
+      color: white;
+      text-decoration: none;
+  }
+  .navbar{
+      min-height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 24px;
+  }
+  */
+  .nav-menu{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 60px;
+  }
+  .nav-menuItem{
+    list-style: none;
+  }
+  
+  .nav-link-menuItem{
+      transition: 0.7s ease;
+      color: white;
+      text-decoration: none;
+      text-align: justify;
+      display: inline;
+  }
+  .nav-link-menuItem:hover{
+      color:dodgerblue;
+      text-decoration: underline;
+      transition: 0.5s;
+  }
+  .hamburger-menu{
+      display: none;
+      cursor: pointer;
+  }
+  .bar{
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: white;
+  }
+  @media(max-width:880px){
+      .hamburger-menu{
+          display: block;
+          padding-bottom: 10px;
+          
+      }
+      .hamburger-menu.active .bar:nth-child(2){
+          opacity: 0;
+      }
+      .hamburger-menu.active .bar:nth-child(1){
+          transform: translateY(8px) rotate(45deg);
+      }
+      .hamburger-menu.active .bar:nth-child(3){
+          transform: translateY(-8px) rotate(-45deg);
+      }
+      .nav-menu{
+          position: fixed;
+          left: -100%;
+          top: 65px;
+          gap: 0;
+          flex-direction: column;
+          background-color: black;
+          text-align: center;
+          width: 100%;
+          transition: 0.3s;
+          margin-top:1rem ;
+      }
+      .nav-menuItem{
+          margin: 16px 0;
+      }
+      
+      
+      .nav-menu.active{
+          left: 0;
+          z-index: 2;
+          background-color: #000;
+      }
+  }        
+    @media (max-width: 794px){
+        .brand-title{
+            margin: 2rem;
+            font-size: 2.5rem;
+            text-shadow: -5px 5px 4px black;
+        
+        }      
+    }
+        .content{
+            display: grid;
+            grid-template-columns: repeat(6,2fr);
+            grid-template-rows: repeat(6,2fr);
+            gap: 20px;
+            height: 50rem;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+           
+        }
+        .item1{
+            
+            grid-column:  1/3;
+            grid-row:  1/4;
+            margin: 10px;
+            width: 100%;  
+            border-radius: 10px; 
+        }
+        .item1__img{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            height: 100%; 
+            box-shadow:  0px 3px 8px #000 ;
+        }
+        .item1__img:hover{
+            box-shadow: 0px 6px 20px;
+        }
+        .item2 {
+            grid-column:  3/7;
+            grid-row:  1/4;
+            padding: 5px;
+            margin: 10px;
+            background-color: #d9d4d4;
+            color: #000000;
+            gap:20px;
+            border-radius: 10px;
+            box-shadow:  0px 3px 8px #000 ;
+          }
+        .item2:hover{
+            box-shadow: 0px 6px 20px;
+          }
+          .item2__paragraph{
+            font-style:normal;
+            padding: 5px;
+            margin: 10px;
+            text-align: justify;
+            color: #000000;
+            padding: 10px 12px;
+
+          }
+          .item2__header{
+            
+            font-weight: 800;
+            font-family: 'Poppins', sans-serif;
+            color: #000000;
+            padding-bottom: 10px;
+
+          }
+          .item2__header:hover{
+            color: #fd2b71;
+            cursor: pointer;
+            text-decoration: wavy;
+
+          }
+          
+          .item2__unordlist{
+            text-align:left;
+            font-family: 'Poppins', sans-serif;
+           
+          }
+          .item2__unordlist__items{
+            font-weight: 600;
+            font-style: normal;
+            font-family: 'Poppins', sans-serif;
+            list-style:square;
+            
+          }
+          .item2__unordlist__items:hover{
+          color:dodgerblue;}
+          .item3 {
+            grid-column:  1/4;
+            grid-row:  4/7;
+            background-color: #d9d4d4;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 10px;
+            box-shadow:  0px 3px 8px #000 ;
+ 
+          }
+          .item3:hover{
+            box-shadow: 0px 6px 20px;
+          }
+          .item3__paragraph{
+            font-style:normal;
+            padding: 5px;
+            margin: 10px;
+            text-align: justify;
+            color: #000000;
+            padding: 10px 12px;
+            
+          }
+
+
+          .item4 {
+            grid-column:  4/7;
+            grid-row:  4/7;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 10px;
+            
+          }
+          .item4__img{
+            width: 100%;
+            object-fit: cover;
+            height: 100%; 
+            border-radius: 10px;
+            box-shadow:  0px 3px 8px #000 ;
+          }
+          .item4__img:hover{
+            box-shadow: 0px 6px 20px;
+          }
+        @media (max-width:850px){
+          .content{
+            display: flex;
+                flex-direction: column;
+                height: 100%;
+                margin-top:5px;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding: 0;
+          }
+        }
+        /*
+        @media (max-width: 690px){
+            
+            .content{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;height: 110rem;
+                gap: 20px;
+             
+                
+                
+                
+            }
+            .item1{
+                
+                flex-direction: row;
+                background-size: cover;
+                background-position: center;
+                width: 50%;
+                height: 30%;
+            }
+            .item2{
+               
+                flex-direction: row;
+            }
+            .item3{
+                
+                flex-direction: row;
+            }
+            .item4{
+                display: flex;
+                flex-direction: column;
+            }
+            .item5{
+                display: flex;
+                flex-direction: column;
+            }.item6{
+                display: flex;
+                flex-direction: column;
+                background: url('AdobeStock_399711672_Preview.jpeg') no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 50%;
+                height: 39%;
+            }
+            .item7{
+                display: flex;
+                flex-direction: column;
+                background: url('image/AdobeStock_292432300_Preview-Copy') no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 50%;
+                height: 30%;
+            }
+            
+        }*/
+        
+        
+          
+          
+
+        /*.footer{
+          
+            bottom: 0;
+            
+           
+            border-bottom: 60px;
+            background-color: #333;
+            /*display: flex;
+            justify-content: space-between;
+            align-items: center; */
+           /* color: white;
+            /*margin: 3px 3px 0px 3px ;*/
+            /*left: 0px;
+            right: 0px;
+            margin-top: 30px;
+            padding-top: 35px;
+            padding-bottom: 30px;
+            
+            border-color: 0;
+            
+        }*/
+        
+        .footer_main{
+          margin-top: 30px;
+          padding-top: 35px;
+          padding-bottom: 30px;
+          background-color: #000000;
+          border-color: 0;
+          color: #ddd;
+
+          padding-right:  15px;
+          padding-left: 15px;
+          
+          border-top: 1px solid #ddd;
+          border-bottom-right-radius: 3px;
+          border-bottom-left-radius: 3px;
+        }
+        .footer_main_container{
+          margin-left: auto;
+          margin-right: auto;
+          padding-left: 10px;
+          padding-right: 10px;
+          text-align: center;
+      }
+      
+         .footer_main_row{
+          display:block;
+          margin-bottom: 35px;
+         }
+      
+      
+        .contact{
+          line-height: 2;
+          margin-top: 20px;
+          
+        }
+        .address{
+          line-height: 2;
+          margin-top: 20px;
+          
+      
+        }
+      
+       .contact_list_items{
+        text-align: center;
+       }
+      .contact_list_elem{
+        text-align: center;
+        font-size: 1rem;
+      } 
+        .contact_block{
+          font-size: 1.3em;
+          padding: 0;
+        }
+        .address_block{
+          font-size: 1.3em;
+        }
+        
+        .contact_list_items{
+          list-style:none ;
+        }
+        .contact_list_items{
+          text-decoration: none;
+          text-align: center;
+        }
+        .contact_list_elem{
+          text-decoration: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          list-style: none;
+        }
+        .contact_list_elem_anchor{
+          color: white;
+          text-decoration: none;
+          
+
+        }
+        .contact_list_elem_anchor:hover{
+          background-color: transparent;
+          color: rgb(71, 99, 174);
+        }
+      
+        .address {
+          color:white;
+          font-size: 1em;
+          line-height: 1.8;
+        }
+      
+        .testimonials{
+          font-size: 25px;
+          padding-top: 10px ;
+        }
+        .testimonials_block{
+          margin-top: 25px;
+        }
+        .copyright{
+          margin: 2px;
+          text-align: center;
+        }
+
+
+        @media (max-width:767px){
+          .contact{
+              margin-bottom: 30px;
+              text-align: center;
+            }
+        
+            .footer_main section:nth-child(3){
+              margin-bottom: 0;/* this for the margin to exist in the whole row*/
+            }
+        
+            .straight-line{
+              display: block !important;
+              width:100%;
+            }
+        }
+        @media (min-width:768px){
+          .columnsmall-4{        /*the 12 grid layout is implemented in this section*/
+              width: 53.33%;
+          }
+          .footer_main_container{
+              width: 700px;
+          }
+          .footer_main_row{
+              display: flex;
+              align-items: center;
+          }
+          .straight-line{
+              display: none;
+            }
+        }
+        @media (min-width: 992px) {
+          .footer_main_container {
+            width: 970px;
+          }
+        }
+        @media (min-width: 1200px) {
+          .footer_main_container {
+            width: 1170px;
+          }
+        }
+
+      /*.val{
+        position:absolute;
+        left:-10000px;
+        top:auto;
+        width:1px;
+        height:1px;
+        overflow:hidden;
+       }
+
+      
+
+      
+      
+
+      .sbt{
+          width: 40%;
+          padding: 10px 30px;
+          background: linear-gradient(to right, #ff105f, #ffad06);
+          border: 0;
+          border-radius: 30px;
+          outline: none;
+
+      }
+      .checkbox{
+          margin:  30px 10px 30px 0px;
+      }*/
+
+      .icon_image{
+        background-color: rgb(191, 191, 234);
+        border-radius: 50%;
+        margin: 5px;
+        height: 24px;
+        padding:2px;
+      }
+
+
+
+
+
+    </style>
+
+    
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        
+        
+        <div class="brand-title" >BD<span class="underline">C</span></div>
+        
+        <ul class="nav-menu">
+          <li class="nav-menuItem"><a class="nav-link-menuItem" href="HomePage.html">Home</a></li>
+              <li class="nav-menuItem"><a class="nav-link-menuItem" href="DonateBlood.html">Donate</a></li>
+              <li class="nav-menuItem"><a class="nav-link-menuItem" href="About_.html">About</a></li>
+              <li class="nav-menuItem"><a class="nav-link-menuItem" href="Contact_.html">Contact</a></li>
+              <li class="nav-menuItem"><a class="nav-link-menuItem" href="Account_.html">Account</a></li>
+              <li class="nav-menuItem"><a class="nav-link-menuItem" href="LearnMore.html">More &#x22EF;</a></li>
+      </ul>
+      <div class="hamburger-menu">
+          <!-- material icons https://material.io/resources/icons/ -->
+          <!-- <i class="menuIcon material-icons">menu</i>
+          <i class="closeIcon material-icons">close</i> -->
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+
+
+
+
+
+        
+
+    </nav>
+  </header>
+    <div class="content">
+          
+            <div class="item1">
+                <img class="item1__img" src="image/image001-min.jpg" alt="image" height="50%" width="50%">
+                
+            </div>
+            <div class="item2">
+                <p class="item2__paragraph">In 1964, Blood Center was born in Addis Ababa. It was founded in response to the need for a reliable, local blood supply. Challenged with a vision to provide a safe and reliable community blood supply, 
+                    our founders sought the cooperation and partnership of community and corporate leaders, employees, blood donors, volunteers, and contributors. 
+                </p>
+                <h4 class="item2__header">Our vission</h4>
+                <ul class="item2__unordlist">
+                    
+                    <li class="item2__unordlist__items">Inspiring people to give blood</li>
+                    <li class="item2__unordlist__items">Increasing communication with our members.</li>
+                    <li class="item2__unordlist__items"> Crearing responsible society in  the world.</li>
+                </ul>
+            </div>
+            <div class="item3">
+                <p class="item3__paragraph">The Community Blood Center is about connecting lives and sharing life.
+                    As a local nonprofit organization, our patients and hospitals depend on us to provide a steady and reliable blood supply.
+                     And we rely on you volunteer blood donors and blood drive sponsors to provide the lifesaving blood and blood products needed.</p>
+                <p class="item3__paragraph">
+                    Blood donation is that important. 
+                    We need to ensure a steady blood supply will be available so we can respond to traumas and urgent needs as they arise. </p>
+                
+            </div>
+            <div class="item4">
+                <img class="item4__img" src="image/Blood-Donors-92-scaled.jpg" alt="image" width="50%" height="50%">
+            </div>
+           
+         
+    </div>
+
+    
+    <footer>
+      <div class="footer">
+          <div class="footer_main">
+              <div class="footer_main_container">
+                  <div class="footer_main_row">
+                      <section class="contact columnsmall-4">
+                          <span class="contact_block">Contact us:<span>
+                          <ul class="contact_list_items">
+                              <li class="contact_list_elem"><a class="contact_list_elem_anchor" href="#">Office: (+251) 0181234567</a></li>
+                              <li class="contact_list_elem"><a  class="contact_list_elem_anchor" href="#">CellPh: (+251) 0334428796</a></li>
+                              <li class="contact_list_elem"><a class="contact_list_elem_anchor" href="#">blood_donation@gmail.com</a></li>
+                              
+                          </ul>
+                          
+                          
+                          
+                          
+
+
+                          
+
+                          <hr class="straight-line">
+              
+                      </section>
+                      <section class="address columnsmall-4" >
+                          <span class="address_block">Address</span>
+                          <br>
+                          Queen Elithabet II  Road<br>
+                          Addis Ababa
+                          <div class="icons">
+                              
+                            <a href="#"> <span><img class="icon_image" src="image/facebook.png" alt="facaebook" height="24px" width="24px"></span></a>
+                            <a href="#"> <span><img class="icon_image" src="image/telegram.png" alt="telegram" height="24px" width="24px"></span></a>
+                            <a href="#"> <span><img class="icon_image" src="image/linkedin.png" alt="likedin" height="24px" width="24px"></span></a>
+                            <a href="#"> <span><img class="icon_image" src="image/twitter.png" alt="twitter" height="24px" width="24px"></span></a>
+                        </div>
+                          <hr class="straight-line">
+                      </section>
+                      <div class="testimonials columnsmall-4" >
+                          <h3>"Blood is the gift that is given to save life"</h3>
+                      </div>
+                  </div>
+                      <div class="underline"></div>
+                      <div class="copyright">&copy;Copyright Blood Donation Center.org</div>
+              </div>
+          </div>
+
+      </div>
+  </footer>
+    <script>
+      const hamburgerMenu=document.querySelector(".hamburger-menu");
+const navMenu=document.querySelector(".nav-menu");
+
+
+hamburgerMenu.addEventListener("click",() => {
+    hamburgerMenu.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+document.querySelectorAll(".nav-link-menuItem").forEach(n=>n.addEventListener("click",()=>{
+    hamburgerMenu.classList.remove("active");
+    navMenu.classList.remove("active");
+}))
+    </script>
+    
+</body>
+</html>

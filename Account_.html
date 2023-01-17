@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap"
+   rel="stylesheet"> 
+
+    <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+       name="description"
+       content="Blood donation center website in which one can easly select appointment"
+     />
+     <meta name="author" content="Abrham Wendmeneh" />
+     <meta name="theme-color" content="#fff" />
+     <meta
+     name="keywords"
+     content="Home, Donate blood, Contact, About, Learn more, My account"/>
+    <title>My account</title>
+    
+    <style>
+        /*html{
+            width: fit-content;
+          }*/
+            body{
+              /*background: url('cool-background.png') no-repeat;/*linear-gradient(#10100f,rgb(123, 120, 120),rgb(128, 129, 128))*/
+              background-color: rgb(78, 162, 247);
+              
+           
+              margin: 0;
+            
+            }
+            
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            header{
+              background-color: #333;
+          }
+           .navbar{
+                display: flex;
+                justify-content:space-between;
+                align-items: center;
+                background-color: #333;
+                color: white;
+                margin: 0px;
+                padding: 0 24px;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                width: 100%;
+            }
+            .navbar-space{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                /*background-color: #333;*/
+                color: white;
+            }
+    
+            
+            .brand-title{
+                margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+                font-size: 4rem;
+                font-family: 'Orbitron';
+                text-shadow: -5px 5px 4px black;
+            
+            }
+            .underline{ /*inorder to underline the title of the last word*/
+                border-bottom: 3px solid white;
+            }
+          
+          .nav-menu{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              gap: 60px;
+              margin-top: 3rem;
+          }
+          .nav-menuItem{
+            list-style: none;
+          }
+          
+          .nav-link-menuItem{
+              transition: 0.7s ease;
+              color: white;
+              text-decoration: none;
+              text-align: justify;
+              display: inline;
+              font-size: 1.2rem;
+             
+          }
+          .nav-link-menuItem:hover{
+              color:dodgerblue;
+              text-decoration: underline;
+              transition: 0.5s;
+          }
+          .hamburger-menu{
+              display: none;
+              cursor: pointer;
+          }
+          .bar{
+              display: block;
+              width: 25px;
+              height: 3px;
+              margin: 5px auto;
+              -webkit-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out;
+              background-color: white;
+          }
+          @media(max-width:880px){
+              .hamburger-menu{
+                  display: block;
+                  padding-bottom: 10px;
+                  
+              }
+              .hamburger-menu.active .bar:nth-child(2){
+                  opacity: 0;
+              }
+              .hamburger-menu.active .bar:nth-child(1){
+                  transform: translateY(8px) rotate(45deg);
+              }
+              .hamburger-menu.active .bar:nth-child(3){
+                  transform: translateY(-8px) rotate(-45deg);
+              }
+              .nav-menu{
+                  position: fixed;
+                  left: -100%;
+                  top: 65px;
+                  gap: 0;
+                  flex-direction: column;
+                  background-color: black;
+                  text-align: center;
+                  width: 100%;
+                  transition: 0.3s;
+                  margin-top:1rem ;
+              }
+              .nav-menuItem{
+                  margin: 16px 0;
+              }
+              
+              
+              .nav-menu.active{
+                  left: 0;
+                  z-index: 2;
+                  background-color: #000;
+              }
+          }        
+            @media (max-width: 794px){
+                .brand-title{
+                    margin: 2rem;
+                    font-size: 2.5rem;
+                    text-shadow: -5px 5px 4px black;
+                
+                }
+            }
+    
+
+        .content{
+            display: grid;
+            grid-template-columns: repeat(1,  1fr);
+            height: 32rem;
+            margin:0;
+            padding: 0;
+            
+            background-size: 100%;
+            margin-bottom: 0;
+            
+           
+        }
+       
+        
+        
+        
+        
+        .item1{
+            
+            grid-column:1;
+            grid-row:1;
+            
+            
+            align-items: center;
+            
+            
+        }
+        .item1__form__container{
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 5px;
+            width: 25rem;
+            align-content: center;
+            margin: 5px auto;
+            height: 30rem;
+        }
+        @media(max-width:890px){
+          .item1__form__container{
+            width: 15rem;
+            margin: 5px auto;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            height: 28rem;}
+            
+            .item1__form__container__firstrow__reset{
+            position: relative;
+            margin-left: 0rem;
+            margin-top: 0.64rem;
+            margin-right: 0rem;
+        }}
+        
+        .item1__form__container__firstrow__elem{
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+        .item1__form__container__firstrow__elem__text{
+            width: 50%;
+            padding: 4px;
+            border: 1px solid rgb(219, 194, 194);
+            border-radius: 4px;
+            resize: vertical;
+            margin: 2px;
+        }
+        .photoi1{
+          width: 50%;
+        }
+        .genderi{
+          margin-left: 2px;
+        }
+        .item1__form__container__firstrow__select__elem{
+            width: 50%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }  
+        /*.item1__form__container__firstrow__select__elem__gender{
+            width:25% ;
+            
+        }*/
+        .item1__form__container__firstrow__elem__text1{
+          padding: 1px;
+          margin: 5px;
+        }
+        .item1__form__container__firstrow__reset{
+          position: relative;
+          margin-left: 5rem;
+          margin-top: 0.64rem;
+          margin-right: 1rem;
+            
+            
+        }
+        .item1__form__container__firstrow__elem__color{
+            color: black;
+        }
+        .item1__form__container__firstrow__elem__color:hover{
+            background-color: dodgerblue;;
+        }
+        .item1__form__container__firstrow__submit{
+            position: absolute;
+            margin-bottom: 5px ;
+            margin-top: 2.5rem;
+           padding: 0;
+            margin-right: 4rem;
+        }
+          
+
+          @media (max-width: 690px){
+            
+            
+            .item1{
+                
+                flex-direction: row;
+                width: 25%;
+                height: 25%;
+               
+                margin: 20px auto;
+                
+            }
+            .item1__form__container{
+                margin: 0 auto;
+                
+                background-color: url('cool-background.png') no-repeat
+            }
+            
+            
+            
+        }
+
+        
+        .footer_main{
+            margin-top: 0px;
+            padding-top: 35px;
+            padding-bottom: 30px;
+            background-color: #000000;
+            border-color: 0;
+            color: #ddd;
+
+            padding-right:  15px;
+            padding-left: 15px;
+            
+            border-top: 1px solid #ddd;
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+          }
+          .footer_main_container{
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: center;
+        }
+        
+           .footer_main_row{
+            display:block;
+            margin-bottom: 35px;
+           }
+        
+        
+          .contact{
+            line-height: 2;
+            margin-top: 20px;
+            
+          }
+          .address{
+            line-height: 2;
+            margin-top: 20px;
+            
+        
+          }
+        
+         .contact_list_items{
+          text-align: center;
+         }
+        .contact_list_elem{
+          text-align: center;
+          font-size: 1rem;
+        } 
+          .contact_block{
+            font-size: 1.3em;
+            padding: 0;
+          }
+          .address_block{
+            font-size: 1.3em;
+          }
+          
+          .contact_list_items{
+            list-style:none ;
+          }
+          .contact_list_items{
+            text-decoration: none;
+            text-align: center;
+          }
+          .contact_list_elem{
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            list-style: none;
+          }
+          .contact_list_elem_anchor{
+            color: white;
+            text-decoration: none;
+            
+
+          }
+          .contact_list_elem_anchor:hover{
+            background-color: transparent;
+            color: rgb(71, 99, 174);
+          }
+        
+          .address {
+            color:white;
+            font-size: 1em;
+            line-height: 1.8;
+          }
+        
+          .testimonials{
+            font-size: 25px;
+            padding-top: 10px ;
+          }
+          .testimonials_block{
+            margin-top: 25px;
+          }
+          .copyright{
+            margin: 2px;
+            text-align: center;
+          }
+          .form-control input{
+            display: block;
+            width: 90%;
+            padding: 1px;
+            border-radius: 4px;
+            border:2px solid #d8d1d1;
+            resize: vertical;
+        }
+        
+
+        .form-control.success input{
+            border:2px solid rgb(26, 167, 26);
+        }
+        .form-control.error input{
+            border:2px solid rgb(228, 29, 22);
+        }
+        .form-control small{
+            position:absolute;
+            margin: 3px;
+            visibility: hidden;
+        }
+          @media (max-width:767px){
+            .contact{
+                margin-bottom: 30px;
+                text-align: center;
+              }
+          
+              .footer_main section:nth-child(3){
+                margin-bottom: 0;/* this for the margin to exist in the whole row*/
+              }
+          
+              .straight-line{
+                display: block !important;
+                width:100%;
+              }
+          }
+          @media (min-width:768px){
+            .columnsmall-4{        /*the 12 grid layout is implemented in this section*/
+                width: 53.33%;
+            }
+            .footer_main_container{
+                width: 700px;
+            }
+            .footer_main_row{
+                display: flex;
+                align-items: center;
+            }
+            .straight-line{
+                display: none;
+              }
+          }
+          @media (min-width: 992px) {
+            .footer_main_container {
+              width: 970px;
+            }
+          }
+          @media (min-width: 1200px) {
+            .footer_main_container {
+              width: 1170px;
+            }
+          }
+          .icon_image{
+            background-color: rgb(191, 191, 234);
+            border-radius: 50%;
+            margin: 5px;
+            height: 24px;
+            padding:2px;
+          }
+          .submiti1{margin-bottom: 4px;}
+
+
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            
+            
+            <div class="brand-title" >BD<span class="underline">C</span></div>
+            
+            <ul class="nav-menu">
+              <li class="nav-menuItem"><a class="nav-link-menuItem" href="HomePage.html">Home</a></li>
+              <li class="nav-menuItem"><a class="nav-link-menuItem" href="DonateBlood.html">Donate</a></li>
+              <li class="nav-menuItem"><a class="nav-link-menuItem" href="About_.html">About</a></li>
+              <li class="nav-menuItem"><a class="nav-link-menuItem" href="Contact_.html">Contact</a></li>
+              <li class="nav-menuItem"><a class="nav-link-menuItem" href="Account_.html">Account</a></li>
+              <li class="nav-menuItem"><a class="nav-link-menuItem" href="LearnMore.html">More &#x22EF;</a></li>
+          </ul>
+          <div class="hamburger-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+            
+  
+        </nav>
+      </header>
+    <div class="content">
+          
+            
+
+            <div class="item1">
+                <form class="item1__form__container">
+                    <div class="item1__form__container__firstrow  form-control">
+                        <div><label class="item1__form__container__firstrow__elem" for="namei1">Name*</label><input class="item1__form__container__firstrow__elem__text" type="text" name="name" id="txtUserName" required><small>Error Message</small></div>
+                        <div><label class="item1__form__container__firstrow__elem"for="email1">Email*</label><input type="email" name="name" class="item1__form__container__firstrow__elem__text" id="txtEmail" required><small>Error Message</small></div>
+                        <div><label class="item1__form__container__firstrow__elem" for="phone1">Phone*</label><input type="phone" name="name" class="item1__form__container__firstrow__elem__text" id="txtPhone" required><small>Error Message</small></div>
+                        <div><label class="item1__form__container__firstrow__elem" for="city1">City*</label><input type="text" name="name" class="item1__form__container__firstrow__elem__text" id="city1" required></div>
+                    </div>  
+                    
+            
+                    <div class="item1__form__container__firstrow ">
+                        <lable class="item1__form__container__firstrow__elem  photoi1" for="photoi1">Select photo <input class="item1__form__container__firstrow__elem__text" type="file" class="photo1" name="myfile" id="photoi1" ></lable>  
+                        <small>Error Message</small>
+                    </div><br>
+            
+            
+                    <div class="item1__form__container__firstrow">
+                        <label  class="item1__form__container__firstrow__elem item1__form__container__firstrow__reset genderi" for="genderi">Gender:</label>
+                        <select class="item1__form__container__firstrow__select__elem__gender  item1__form__container__firstrow__reset" name="gender" id="genderi" class="item1__form__container__firstrow__elem__text">
+                            <option value="">Select one…</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                        </select>
+                    </div>
+
+                    <div class="item1__form__container__firstrow   form-control">
+                        
+                        <label  class="item1__form__container__firstrow__elem  item1__form__container__firstrow__submit  item1__form__container__firstrow__elem__text1" for="submiti1"><input class="item1__form__container__firstrow__elem__text  item1__form__container__firstrow__elem__color submiti1" type="submit" value="update" id="submiti1"></label><br>
+                       
+                        <label  class="item1__form__container__firstrow__elem  item1__form__container__firstrow__submit  item1__form__container__firstrow__elem__text1" for="submiti2"><input class="item1__form__container__firstrow__elem__text  item1__form__container__firstrow__elem__color" type="reset"  value="cancel" id="submiti2"><br></label></div>
+                    </div>
+                </form>
+                
+            </div>
+            
+         
+    </div>
+
+    
+    <footer>
+        <div class="footer">
+            <div class="footer_main">
+                <div class="footer_main_container">
+                    <div class="footer_main_row">
+                        <section class="contact columnsmall-4">
+                            <span class="contact_block">Contact us:<span>
+                            <ul class="contact_list_items">
+                                <li class="contact_list_elem"><a class="contact_list_elem_anchor" href="#">Office: (+251) 0181234567</a></li>
+                                <li class="contact_list_elem"><a  class="contact_list_elem_anchor" href="#">CellPh: (+251) 0334428796</a></li>
+                                <li class="contact_list_elem"><a class="contact_list_elem_anchor" href="#">blood_donation@gmail.com</a></li>
+                                
+                            </ul>
+                            
+                            
+                            
+                            
+
+
+                            
+
+                            <hr class="straight-line">
+                
+                        </section>
+                        <section class="address columnsmall-4" >
+                            <span class="address_block">Address</span>
+                            <br>
+                            Queen Elithabet II  Road<br>
+                            Addis Ababa
+                            <div class="icons">
+                                
+                              <a href="#"> <span><img class="icon_image" src="image/facebook.png" alt="facaebook" height="24px" width="24px"></span></a>
+                              <a href="#"> <span><img class="icon_image" src="image/telegram.png" alt="telegram" height="24px" width="24px"></span></a>
+                              <a href="#"> <span><img class="icon_image" src="image/linkedin.png" alt="likedin" height="24px" width="24px"></span></a>
+                              <a href="#"> <span><img class="icon_image" src="image/twitter.png" alt="twitter" height="24px" width="24px"></span></a>
+                          </div>
+                            <hr class="straight-line">
+                        </section>
+                        <div class="testimonials columnsmall-4" >
+                            <h3>"Blood is the gift that is given to save life"</h3>
+                        </div>
+                    </div>
+                        <div class="underline"></div>
+                        <div class="copyright">&copy;Copyright Blood Donation Center.org</div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script>const hamburgerMenu=document.querySelector(".hamburger-menu");
+        const navMenu=document.querySelector(".nav-menu");
+        
+        
+        hamburgerMenu.addEventListener("click",() => {
+          hamburgerMenu.classList.toggle("active");
+          navMenu.classList.toggle("active");
+        })
+        document.querySelectorAll(".nav-link-menuItem").forEach(n=>n.addEventListener("click",()=>{
+          hamburgerMenu.classList.remove("active");
+          navMenu.classList.remove("active");
+        }))
+
+
+
+        let userName=document.getElementById("txtUserName");
+    let email=document.getElementById("txtEmail");
+    let phone=document.getElementById("txtPhone");
+      
+        function validateInput(){
+          //check username is empty 
+          if(userName.value.trim()===""){
+             onError(userName,"User Name cannot be empty");
+          }else{
+              onSuccess(userName);
+          }
+  
+          if(email.value.trim()===""){
+              onError(email,"Email cannot be empty");
+          }else{
+              if(!isValidEmail(email.value.trim())){
+                  onError(email,"Email is not valid");
+              }else{
+                  onSuccess(email);
+              }
+          }
+          let x = document.getElementById("txtPhone").value;
+          if(phone.value.trim()===""|| x< 1 || x > 10){
+              onError(phone," It is not valid");
+           }else{
+               onSuccess(phone);
+           } 
+  
+           if(city.value.trim()===""){
+              onError(city,"it is not valid");
+           }else{
+               onSuccess(city);
+           }
+           
+           if(country.value.trim()===""){
+              onError(country,"it is not valid format");
+           }else{
+               onSuccess(country);
+           }
+  
+           if(bloodType.value.trim()===""){
+              onError(bloodType,"it is not valid format");
+           }else{
+               onSuccess(bloodType);
+           }
+  
+           if(age.value.trim()===""){
+              onError(age,"it is not valid format");
+           }else{
+               onSuccess(age);
+           }
+  
+  
+           if(gender.value.trim()===""){
+              onError(gender,"it is not valid format");
+           }else{
+               onSuccess(gender);
+           }
+  
+           if(weightA.value.trim()===""){
+              onError(weightA,"it is not valid format");
+           }else{
+               onSuccess(weightA);
+           }
+           
+          //password
+          if(pwd.value.trim()===""){
+              onError(pwd,"User Name cannot be empty");
+           }else{
+               onSuccess(pwd);
+           }
+           if(conPwd.value.trim()===""){
+              onError(conPwd,"User Name cannot be empty");
+           }else{
+               if(pwd.value.trim()!==conPwd.value.trim()){
+                  onError(conPwd,"Password & Confirm password not matching");
+               }
+               else
+               onSuccess(conPwd);
+           }
+      }
+      
+      document.querySelector("button")
+      .addEventListener("click",(event)=>{
+          event.preventDefault();
+          validateInput();
+      });
+      
+      function onSuccess(input){
+          let parent=input.parentElement;
+          let messageEle=parent.querySelector("small");
+          messageEle.style.visibility="hidden"; 
+          parent.classList.remove("error");
+          parent.classList.add("success");  
+      }
+      function onError(input,message){
+          let parent=input.parentElement;
+          let messageEle=parent.querySelector("small");
+          messageEle.style.visibility="visible";
+          messageEle.innerText=message;  
+          parent.classList.add("error");
+          parent.classList.remove("success");
+      
+      }
+      
+      function isValidEmail(email){
+         return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+      }
+      function isValidPhone(){
+          mobileNumberValue=phone.value.trim(); 
+          validMobileNumber=/^[0-9]*$/;
+          mobileNumberErr=document.getElementById('txtPhone');
+          if(mobileNumberValue=="")
+          {
+           alert("Mobile Number is required");
+          }else if(!validMobileNumber.test(mobileNumberValue)){
+            alert("Mobile Number must be a number");
+          }else if(mobileNumberValue.length!=10){
+             alert("Mobile Number must have 10 digits");
+          }
+          else{
+            mobileNumberErr.innerHTML="";
+            return true;
+          }
+        }
+       mobileNumber.oninput=function(){
+          isValidPhone();
+       }
+
+      
+      </script>
+    
+</body>
+</html>
