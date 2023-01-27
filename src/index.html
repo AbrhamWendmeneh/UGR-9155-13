@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap"
+   rel="stylesheet"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta
+      name="description"
+      content="Blood donation center website in which one can easly select appointment"/>
+    <meta name="author" content="Abrham Wendmeneh" />
+    <meta name="theme-color" content="#fff" />
+    <metaname="keywords" content="Home, Donate blood, Contact, About, Learn more, My account"/>
+    <!-- <link rel="stlylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap-grid.css"> -->
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap-grid.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <title>Home_page</title>
+     
+    <style>
+     
+    
+ 
+ 
+  .item3_anchor::after{/* for the symbol in the page*/
+    content: '\00BB';
+  }
+  
+ 
+  
+  .mySlides--slideshow--container {display: none}/*I use this to make responsive in which to slide if the size of the screen is small*/
+          @media(min-width:991px){
+            .slideshow--container {
+              
+                display: none;
+              }
+            
+              .slideshow--container--dot {
+                display: none;}
+
+          }
+            @media(max-width:991px){
+              .slideshow--container {
+              
+                margin: auto;
+              }
+              .slideshow--container--img{
+                vertical-align: middle;
+                border-radius: 10px;
+                margin: 5px auto;
+                display: flex;
+              }  
+
+              .slideshow--container--dot {
+                flex-direction: column;
+                flex-wrap: wrap;
+                top: 0px;
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+              }
+              
+              /*.active:hover {
+                background-color: #717171;
+              }*/
+              .slideshow--container--dot:hover {
+                background-color: #717171;
+              }
+              
+              .slideshow--container--fade {
+                animation-name: fade;
+                animation-duration: 1.5s;
+              }
+              
+              @keyframes slideshow--container--fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+              }
+             
+            }
+            @media (max-width: 991px){
+              .item5{
+                display: none;
+              }
+              .item6{
+                display: none;
+              }
+              .item7{
+                display: none;
+              }
+            }    
+            
+            
+          
+    </style>
+    <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+   
+        
+    <header >
+       <nav class="navbar d-flex m-10 p-1 navbar-expand-md navbar-light bg-dark  ">
+          
+          
+          <div class="brand-title navbar-brand fs-1 fw-bold text-white " >BD<span class=" text-decoration-underline">C</span></div>
+          
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+          <div class="nav-menu navbar-nav  navbar-nav ms-auto p-3 " >
+            <a class="nav-link text-center   text-white me-3  pe-2" href="index.html">Home</a>
+            <a class="nav-link text-center   text-white pe-1 me-3" href="DonateBlood.html">Donate</a>
+            <a class="nav-link text-center   text-white pe-1 me-3" href="About_.html">About</a>
+            <a class="nav-link text-center   text-white  pe-1 me-3 " href="Contact_.html">Contact</a>
+            <a class="nav-link text-center  text-white pe-1 me-3" href="Account_.html">Account</a>
+            <a class="nav-link text-center  text-white  pe-0 " href="LearnMore.html">More &#x22EF;</a>
+           
+          </div>
+        </div>
+          
+
+      </nav>
+    </header>
+
+    <div class="content   container-fluid">
+      <div class="row">    
+        <div class="item1 col-md-7  col-sm-7 col-xs-12 mt-4">
+            <img class="item1_image h-100 w-100 shadow-1-strong rounded mb-4 img-thumbnail" src="image/child_with_medical_doctor.jpg" alt=" a girl and physcian " width="80%" height="60%" no repeat>
+        </div>
+        <div class="col-md-5 col-sm-5 col-xs-12 mt-4 p-1">
+          <div class="item2">
+            <div class="item2_framebox me-2 mb-6 mx-auto my-auto mw-100 h-100 ">
+              <div class="item2_framebox_btn  ">
+                  <div class="item2_frambox_content  "></div>
+                  <button type="submit"  class="item2_frambox_content_btn btn btn-primary mt-2 rounded-pill "><a  class="item2_frambox_content_btn_anchor  text-white text-decoration-none" href="#">login</a></button>
+                  <button type="button" class="item2_frambox_content_btn mt-2 rounded-pill btn btn-primary "><a class="item2_frambox_content_btn_anchor  text-decoration-none text-white " href="Account_.html">Sign in</a></button>
+              </div>
+              <form class="item2_input-group form " name="Form" onsubmit=" validateForm()" method="post">
+                  <div class="form-control">
+                  <label for="email" name="email">Email</label><br>
+                  <input id="txtEmail"  type="email" name="email" class="item2_inputfield" id="fieldi1"  placeholder="email" required="required">
+                  <small>Error Message</small>
+                  </div>
+
+                  <div class="form-control">
+                  <label for="pwd" name="pwd">Password</label><br>
+                  <input id="txtPwd" type="password" name="pwd" class="item2_inputfield"  placeholder="password" id="fieldi2" required="required">
+                  <small>Error Message</small></div>
+                  <!--button type="reset" class="sbt"><input type="reset" value="reset" </button></!--button-->
+              </form>
+          </div>
+          </div>
+          <div class="item3 mt-4">
+              <a class="item3_anchor text-decoration-none bg-danger text-white text-center rounded-pill p-2 mt-2" href="DonateBlood.html">Make an appointment  </a>
+              <h3 class="item3_header text-center text-uppercase m-1 p-1">One pint of blood can save the live !</h3>
+              <p class="item3_paragraph text-center text-uppercase fw-semibold fst-italic">
+                  “Someone's blood saved my life and made my mom smile was that you?” A 5 yr old Kid
+              </p>
+              
+          </div>
+        </div>  
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="item4 mt-5 p-3">
+              <video class="item4_video w-100 " controls>    
+                  <source class="w-100 shadow-1-strong rounded m-5 p-4" src="video/Info-graphic Film on Voluntary Blood Donation(5) (online-video-cutter.com).mp4" height="10%" width="50%">
+                  
+                </video>
+              
+              
+          </div>
+        </div>
+        
+          <div class="item5 col-md-4  col-sm-4 col-xs-4 rounded mt-3" >
+            <!-- <div id="slideshow-container"> -->
+              <img class="item5_image w-100 " src="image/AdobeStock_459815331_Preview.WebP" alt="labobratory technician " width="80%" height="80%" no repeat>
+              
+          </div>
+          <div class="item6 col-md-4  col-sm-4 col-xs-4 rounded mt-3">
+              <img class="item6_image w-100 rounded " src="image/4-3-1.WebP"  alt="blood donator" width="80%" height="80%" no repeat>
+          </div>
+          <div class="item7 col-md-4  mt-3  ">
+              <img class="item7_image w-100 bordred rounded" src="image/AdobeStock_249231428_Preview.WebP" alt="sign of support" width="80%" height="80%" no-repeat>
+          </div>
+        </div>   
+
+
+
+
+                  
+      </div>
+      
+      
+
+
+
+    
+              
+              
+          <div class="slideshow--container">
+
+            <div class="mySlides slideshow--container--fade">
+
+              <img class="slideshow--container--img" src="image/AdobeStock_459815331_Preview.WebP" alt="labobratory technician " width="80%" height="80%" no repeat >
+              
+            </div>
+
+            <div class="mySlides slideshow--container--fade">
+
+              <img class="slideshow--container--img" src="image/4-3-1.WebP"  alt="labobratory technician " width="80%" height="80%" no repeat>
+            
+            </div>
+
+            <div class="mySlides slideshow--container--fade">
+
+              <img class="slideshow--container--img" src="image/AdobeStock_249231428_Preview.WebP" alt="sign of support" width="80%" height="80%" no-repeat>
+            
+            </div>
+            <div style="text-align:center">
+              <span class="slideshow--container--dot" onclick="currentSlide(1)"></span> 
+              <span class="slideshow--container--dot" onclick="currentSlide(2)"></span> 
+              <span class="slideshow--container--dot" onclick="currentSlide(3)"></span> 
+            </div>
+          </div> 
+
+          
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("slideshow--container--dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+         
+    </div>
+
+    
+    <footer class="panel-footer bg-dark mt-4">
+        <div class="footer container">
+            <div class="footer_main ">
+                <div class="footer_main_container">
+                    <div class="footer_main_row row">
+                        <section class="contact  col-md-4 d-flex justify-content-center">
+                            <span class="contact_block text-white ">Contact us:<span>
+                            <ul class="contact_list_items ">
+                                <li class="contact_list_elem list-group-item "><a class="contact_list_elem_anchor text-decoration-none text-white " href="#">Office: (+251) 0181234567</a></li>
+                                <li class="contact_list_elem list-group-item"><a  class="contact_list_elem_anchor text-decoration-none text-white" href="#">CellPh: (+251) 0334428796</a></li>
+                                <li class="contact_list_elem list-group-item"><a class="contact_list_elem_anchor text-decoration-none text-white" href="#">blood_donation@gmail.com</a></li>
+                                
+                            </ul>
+                          
+                
+                        </section>
+                        <section class="address   col-md-4" >
+                            <span class="address_block "><h5 class="text-center text-white">Address</h5></span>
+                            <h6 class="text-center text-white">
+                            Queen Elithabet II  Road<br>
+                            Addis Ababa</h6>
+                            <div class="icons mx-auto d-flex justify-content-center ">
+                                
+                              <a href="#"> <span><img class="icon_image bg-white rounded-circle p-1.1 mx-2" src="image/facebook.png" alt="facaebook" height="24px" width="24px"></span></a>
+                              <a href="#"> <span><img class="icon_image bg-white rounded-circle p-1.1 mx-2" src="image/telegram.png" alt="telegram" height="24px" width="24px"></span></a>
+                              <a href="#"> <span><img class="icon_image bg-white rounded-circle p-1.1 mx-2" src="image/linkedin.png" alt="likedin" height="24px" width="24px"></span></a>
+                              <a href="#"> <span><img class="icon_image bg-white rounded-circle p-1.1 mx-2" src="image/twitter.png" alt="twitter" height="24px" width="24px"></span></a>
+                          </div>
+                            <hr class="straight-line">
+                        </section>
+                        <div class="testimonials  col-md-4 " >
+                            <h3 class="text-center text-white">"Blood is the gift that is given to save life"</h3>
+                        </div>
+                    </div>
+                        <div class="underline bg-white"></div>
+                        <div class="copyright text-center text-white">&copy;Copyright Blood Donation Center.org</div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    
+</body>
+</html>

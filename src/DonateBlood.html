@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap"
+     rel="stylesheet"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment I</title>
+    <!--link rel="stylsheet" href="/assignment 1/styleindex.css"--> 
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap-grid.css">
+    
+    
+<style>
+    .item4_img{/* the size of the image is small this the reason that i use style to enlarge it*/
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: auto 5px;
+        border-radius: 10px;
+        box-shadow:  0px 3px 8px #000 ;
+    }
+    .item4_img:hover{
+        box-shadow: 0px 8px 30px;
+    }
+    
+</style>
+    
+</head>
+
+<body>
+    
+    <header>
+          <nav class="navbar d-flex m-10 p-1 navbar-expand-md navbar-light bg-dark  ">
+          
+          
+            <div class="brand-title navbar-brand fs-1 fw-bold text-white " >BD<span class=" text-decoration-underline">C</span></div>
+  
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+            <div class="nav-menu navbar-nav  navbar-nav ms-auto p-3 " >
+                <a class="nav-link text-center   text-white me-3  pe-2" href="index.html">Home</a>
+                <a class="nav-link text-center   text-white pe-1 me-3" href="DonateBlood.html">Donate</a>
+                <a class="nav-link text-center   text-white pe-1 me-3" href="About_.html">About</a>
+                <a class="nav-link text-center   text-white  pe-1 me-3 " href="Contact_.html">Contact</a>
+                <a class="nav-link text-center  text-white pe-1 me-3" href="Account_.html">Account</a>
+                <a class="nav-link text-center  text-white  pe-0 " href="LearnMore.html">More &#x22EF;</a>
+            
+             
+            </div>
+          </div>          
+        </nav>
+    </header>
+  
+    <div class="content container">
+        <div class="row">
+            
+                <div class="item1">
+                    <!--img src="AdobeStock_182073404_Preview.jpeg" alt="img" width="298px" height="488px" no repeat-->
+
+                
+                    <form class="form_container form" action="/" method="get" onsubmit="validateInput()" onclick="isValidPhone()" >
+                        <div class="col-md-12  col-sm-12 col-xs-12 mt-4">
+                            <div class="form_container_elem  form-control">
+                                <label class="elem-1  form-label mx-3" for="username">Name*</label>
+                                <input type="text" name="username" id="txtUserName" class="text_elem "  requried >
+                                <!-- <small class="container--form-small">Error Message</small> -->
+                                <!-- <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>                                 -->
+                                <br>
+                            </div>
+
+                            <div class="form_container_elem  form-control mt-4">
+                                <label class="elem-1 form-label mx-3" for="email" name="email">Email*</label>
+                                <input id="txtEmail" type="email" name="email" class="text_elem" required >
+                                <small></small>
+                                <!-- <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div> -->
+                            </div><br>
+
+                            <div class="form_container_elem  form-control">
+                                <label class="elem-1 form-label mx-3" for="phone">Phone*</label>
+                                <input type="text" name="phone" id="txtPhone"  required class="text_elem ">
+                                <small></small>
+                                <!-- <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>  -->
+                            </div><br>
+
+                            <div class="form_container_elem form-control">
+                                <label class="elem-1 form-label mx-4" for="city">City*</label>
+                                <input type="text" name="city" id="txtCity" required class="text_elem">
+                                <small></small>
+                                <!-- <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div> -->
+                            </div><br>
+                            </div>
+
+                            <div class="form_container_elem form-control">
+                                <label class="elem-1  form-label" for="country">Country*</label>
+                                    <select class="select_elem form-select" name="country" id="txtCountry">
+                                        <option value=""></option>
+                                        <option value="Djibouty">Djibouty</option>
+                                        <option value="Ertirea">Ertirea</option>
+                                        <option value="Ethiopia">Ethiopia</option>
+                                        <option value="Kenya">Kenya</option>
+                                        <option value="Somalia">somalia</option>
+                                        <option value="South sudan">south sudan</option>
+                                        <option value="Sudan">Sudan</option>
+                                    </select>
+                                    <small></small>
+                                    <!-- <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>                                     -->
+                            </div><br>
+                            <div class="form_container_elem form-control">
+                                <label for="bl1" class="elem-1  form-label">Blood type</label>  
+                                    <select class="select_elem form-select" id="txtBloodType" name="bloodType">
+                                        <option value="" id="bl1" ></option>
+                                        <option value="A+" id="bl1">A+</option>
+                                        <option value="A-" id="bl1">A-</option>
+                                        <option value="B+" id="bl1">B+</option>
+                                        <option value="B-" id="bl1">B-</option>
+                                        <option value="AB" id="bl1">AB</option>
+                                        <option value="O+" id="bl1">O+</option>
+                                        <option value="O-" id="bl1">O-</option>
+                                        
+                                    </select>
+                                    <small></small>
+                                    <!-- <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>                                     -->
+                            </div><br>
+                        
+                            <div class="form_container_elem form-control">
+                                <label for="numi1" class="lable-elem-1 num_elem   form-label" name="age" >Age*</label>
+                                <input type="number" id="txtAge" name="num" min="18" max="65" class="num_elem">
+                                <small></small>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>                                
+                            </div><br>
+
+                            <div class="form_container_elem form-control">
+                                <label for="numi1" class="lable-elem-1 num_elem2  form-label"  name="weight" >Weight*</label>
+                                <input type="number" id="txtWeight" name="num" min="45" class="num_elem2">
+                                <small></small>
+                            </div><br>
+                        
+                            <div class="form_container_elem ">
+                                <p class="elem_paragraph" >Is there any history of surgery or blood transfusion in the past six months?</p>
+                                <label for="resi" ><input type="radio" name="res" value="YES" >YES<br></label>
+                                <label for="noi" class="lable-elem-1"></label>
+                                <input type="radio" name="res" id="noi" value="NO" class="bool_elem">NO<br>
+                            </div>
+                        
+                            <div class="form_container_elem ">
+                                <p class="elem_paragraph" >Are you taking or have you taken any type of antibiotics in the past 72 hours?</p>
+                                <label for="radioi" class="lable-elem-1"><input type="radio" name="boolVal" value="YES" class="bool_elem">YES<br></label>
+                                <label for="noii" class="lable-elem-1"><input type="radio" name="boolVal" value="NO" class="bool_elem">NO<br></label>
+                            </div>
+                        
+                            <div class="form_container_elem  ">
+                                <label for="optioni"><p class="elem_paragraph form-label"> Do you suffer from or have suffered from any of the following diseases?</p></label> 
+                                <select class="select_elem form-select" name="option" id="sel1">
+                                    <option value="Please select if you " ></option>
+                                    <option value="Heart disease">Heart disease</option>
+                                    <option value="HIV AIDS">HIV AIDS</option>
+                                    <option value="Diabets">Diabets</option>
+                                    <option value="Cancer/Malignant Disease">Cancer/Malignant Disease</option>
+                                    <option value="Sexually Transmitted Diseases">Sexually Transmitted Diseases</option>
+                                    <option value="Allergic Disease">Allergic</option>
+                                    <option value="Kidney Disease">Kidney Disease</option>
+                                    <option value="Tuberclosis">Tuberclosis</option>
+                                    <option value="Hepatitis B/C">Hepatitis B/C</option>
+                                    
+                                </select><br>
+                                <input type="radio" name="boolVal" value="YES" class="bool_elem ">YES<br>
+                                <input type="radio" name="boolVal" value="NO" class="bool_elem">NO<br>
+                                <div class="form_container_elem elem-1 mt-2 form-control">
+                                    <button class="lable-elem-1 submit_elem btn btn-primary" onclick="isValidPhone()">Submit</button>
+                                </div><br>
+                            </div>
+                    
+                            
+
+                    
+                    
+                    
+                    
+                    
+                        
+                
+                    </form>
+                            
+                </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="item2">
+                
+                <div class="item2-calendar"><lable for="namei" class="form-control form-label"><h5 class="text-capitalize">calendar</h5><input type="date" placeholder="book calendar" id="namei" name="name" </lable>
+                    <button class="btn btn-primary mt-2" type="submit" value="submit" id="submit-el-1" onclick="myFunction()">Submit</button><br><br>
+                </div>
+            </div>
+            
+            <div class="item3">
+                <p class="item3_paragraph" id="item3_event" "></p>
+            </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="item4">
+                <img class="item4_img" src="image/4-3-1.WebP" alt="image" width="80%" height="80%" no repeat> 
+            </div>
+                </div>
+        </div>
+        
+    </div>
+
+    
+
+<footer class="panel-footer bg-dark mt-4 p-3">
+    <div class="footer container">
+        <div class="footer_main ">
+            <div class="footer_main_container">
+                <div class="footer_main_row row">
+                    <section class="contact col-sm-4 d-flex justify-content-center">
+                        <span class="contact_block text-white ">Contact us:<span>
+                        <ul class="contact_list_items ">
+                            <li class="contact_list_elem list-group-item "><a class="contact_list_elem_anchor text-decoration-none text-white " href="#">Office: (+251) 0181234567</a></li>
+                            <li class="contact_list_elem list-group-item"><a  class="contact_list_elem_anchor text-decoration-none text-white" href="#">CellPh: (+251) 0334428796</a></li>
+                            <li class="contact_list_elem list-group-item"><a class="contact_list_elem_anchor text-decoration-none text-white" href="#">blood_donation@gmail.com</a></li>
+                            
+                        </ul>
+                        
+        
+                    </section>
+                    <section class="address  col-sm-4 " >
+                        <span class="address_block "><h5 class="text-center text-white">Address</h5></span>
+                        <h6 class="text-center text-white">
+                        Queen Elithabet II  Road<br>
+                        Addis Ababa</h6>
+                        <div class="icons mx-auto d-flex justify-content-center ">
+                            
+                          <a href="#"> <span><img class="icon_image bg-white rounded-circle p-1.1 mx-2" src="image/facebook.png" alt="facaebook" height="24px" width="24px"></span></a>
+                          <a href="#"> <span><img class="icon_image bg-white rounded-circle p-1.1 mx-2" src="image/telegram.png" alt="telegram" height="24px" width="24px"></span></a>
+                          <a href="#"> <span><img class="icon_image bg-white rounded-circle p-1.1 mx-2" src="image/linkedin.png" alt="likedin" height="24px" width="24px"></span></a>
+                          <a href="#"> <span><img class="icon_image bg-white rounded-circle p-1.1 mx-2" src="image/twitter.png" alt="twitter" height="24px" width="24px"></span></a>
+                      </div>
+        
+                    </section>
+                    <div class="testimonials col-sm-4" >
+                        <h3 class="text-center text-white">"Blood is the gift that is given to save life"</h3>
+                    </div>
+                </div>
+                    <div class="underline bg-white"></div>
+                    <div class="copyright text-center text-white">&copy;Copyright Blood Donation Center.org</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const hamburgerMenu=document.querySelector(".hamburger-menu");
+        const navMenu=document.querySelector(".nav-menu");
+    
+    
+        hamburgerMenu.addEventListener("click",() => {
+            hamburgerMenu.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        })
+        document.querySelectorAll(".nav-link-menuItem").forEach(n=>n.addEventListener("click",()=>{
+            hamburgerMenu.classList.remove("active");
+            navMenu.classList.remove("active");
+        }))    
+        function myFunction() {
+            document.getElementById("item3_event").innerHTML = "Thanks for all you do! We couldn't get along without you.";
+          }
+    
+        let userName=document.getElementById("txtUserName");
+        let email=document.getElementById("txtEmail");
+        let phone=document.getElementById("txtPhone");
+        let city=document.getElementById("txtCity");
+        let gender=document.getElementById("txtGender");
+        let weightA=document.getElementById("txtWeight");
+        let age=document.getElementById("txtAge");
+        let country=document.getElementById("txtCountry");
+        let bloodType=document.getElementById("txtBloodType");
+    
+        let form=document.querySelector("form");
+        
+        function validateInput(){
+            //check username is empty 
+            if(userName.value.trim()===""){
+               onError(userName,"User Name cannot be empty");
+            }else{
+                onSuccess(userName);
+            }
+    
+            if(email.value.trim()===""){
+                onError(email,"Email cannot be empty");
+            }else{
+                if(!isValidEmail(email.value.trim())){
+                    onError(email,"Email is not valid");
+                }else{
+                    onSuccess(email);
+                }
+            }
+            let x = document.getElementById("txtPhone").value;
+            if(phone.value.trim()===""|| x< 1 || x > 10){
+                onError(phone," It is not valid");
+             }else{
+                 onSuccess(phone);
+             } 
+    
+             if(city.value.trim()===""){
+                onError(city,"it is not valid");
+             }else{
+                 onSuccess(city);
+             }
+             
+             if(country.value.trim()===""){
+                onError(country,"it is not valid format");
+             }else{
+                 onSuccess(country);
+             }
+    
+             if(bloodType.value.trim()===""){
+                onError(bloodType,"it is not valid format");
+             }else{
+                 onSuccess(bloodType);
+             }
+    
+             if(age.value.trim()===""){
+                onError(age,"it is not valid format");
+             }else{
+                 onSuccess(age);
+             }
+    
+    
+             if(gender.value.trim()===""){
+                onError(gender,"it is not valid format");
+             }else{
+                 onSuccess(gender);
+             }
+    
+             if(weightA.value.trim()===""){
+                onError(weightA,"it is not valid format");
+             }else{
+                 onSuccess(weightA);
+             }
+             
+            //password
+            if(pwd.value.trim()===""){
+                onError(pwd,"User Name cannot be empty");
+             }else{
+                 onSuccess(pwd);
+             }
+             if(conPwd.value.trim()===""){
+                onError(conPwd,"User Name cannot be empty");
+             }else{
+                 if(pwd.value.trim()!==conPwd.value.trim()){
+                    onError(conPwd,"Password & Confirm password not matching");
+                 }
+                 else
+                 onSuccess(conPwd);
+             }
+        }
+        
+        document.querySelector("button")
+        .addEventListener("click",(event)=>{
+            event.preventDefault();
+            validateInput();
+        });
+        
+        function onSuccess(input){
+            let parent=input.parentElement;
+            let messageEle=parent.querySelector("small");
+            messageEle.style.visibility="hidden"; 
+            parent.classList.remove("error");
+            parent.classList.add("success");  
+        }
+        function onError(input,message){
+            let parent=input.parentElement;
+            let messageEle=parent.querySelector("small");
+            messageEle.style.visibility="visible";
+            messageEle.innerText=message;  
+            parent.classList.add("error");
+            parent.classList.remove("success");
+        
+        }
+        
+        function isValidEmail(email){
+           return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+        }
+        function isValidPhone(){
+            mobileNumberValue=phone.value.trim(); 
+            validMobileNumber=/^[0-9]*$/;
+            mobileNumberErr=document.getElementById('txtPhone');
+            if(mobileNumberValue=="")
+            {
+             alert("Mobile Number is required");
+            }else if(!validMobileNumber.test(mobileNumberValue)){
+              alert("Mobile Number must be a number");
+            }else if(mobileNumberValue.length!=11){
+               alert("Mobile Number must have 10 digits");
+            }
+            else{
+              mobileNumberErr.innerHTML="";
+              return true;
+            }
+          }
+         mobileNumber.oninput=function(){
+            isValidPhone();
+         }
+    
+    
+    
+        
+    
+    
+    
+    </script>
+    
+
+
+
+</footer>
+<script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script> 
+
+</body>
+</html>
